@@ -1,0 +1,43 @@
+<ion-app>
+  <ion-menu slid="start" menuId="m1">
+      <ion-header>
+          <ion-toolbar>
+            <ion-title>
+              Pay Roll System
+            </ion-title>
+          </ion-toolbar>
+        </ion-header>
+      
+        <ion-content>
+          <ion-list>
+            <ion-menu-toggle>
+              <ion-item lines="none" routerLink="/salary">
+                  <ion-icon name="home" color="primary" slot="start"></ion-icon>
+                <ion-label >Home</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+            <ion-menu-toggle>
+              <ion-item lines="none" routerLink="/profile">
+                  <ion-icon  name="person" color="primary" slot="start"></ion-icon>
+                <ion-label >Profile</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+            <ion-menu-toggle>
+              <ion-item lines="none" routerLink="/calender">
+                <ion-icon name="calendar" color="primary" slot="start"></ion-icon>
+                <ion-label >Calendar</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+            <ion-menu-toggle>
+              <ion-item lines="none" (click)=" onLogout()">
+                  <ion-icon name="power" color="primary" slot="start"></ion-icon>
+                <ion-label >Logout</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+            
+          </ion-list>
+        </ion-content>
+    
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app>
